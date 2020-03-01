@@ -1,4 +1,4 @@
 [% 
-	var t:Template:= TemplateFactory.load('transformacionEGL.egl');
+	var t:Template:= TemplateFactory.load('TransformacionEGL.egl');
 	t.generate('Javadoc.html');
 %]

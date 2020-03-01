@@ -1,214 +1,3926 @@
 
 
+
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <title>MarketPlace</title>
 <style type="text/css">
-.div1{
-position: absolute; 
-height: 100%; 
-width: 20%;
-border-style: solid;
-border-color: gray;
-border-radius:5px;
-overflow-y:scroll
+
+.div{
+	min-height: 100vh; 
+	max-width: 70%;
+	padding: 0 10em;
 }
-.div2{
-left:0%;
-top:0%;  
-position: absolute;
-height: 99%; 
-width: 99.7%
+
+a.custom {
+	background-color: #019875;
+	color: white;
+	padding: 14px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 8px;
 }
 </style>
-<script src="http://code.jquery.com/jquery-latest.min.js"
-        type="text/javascript"></script>
-<script src="anotaciones.js"
-        type="text/javascript"></script>
 </head>
 <body>
-<div class="div2">
-<a  name="top"></a>
-<h1 align="center">Market Place Javadoc</h1>
- <a  href="#_ClientLogicService">_ClientLogicService</a>-
- <a  href="#ClientLogicService">ClientLogicService</a>-
- <a  href="#ClientLogicServiceTest">ClientLogicServiceTest</a>-
- <br>
-<br>
 
- 
- <a name="_ClientLogicService"></a>
-<h1>Clase: _ClientLogicService</h1>
-<table  border="1" style="width: 100%">
-<tr >
-<td colspan="2" bgcolor="#9FD2F0">
-<h1>Anotaciones</h1>
-</td>
-</tr>
- 
- <tr>
-<td style="width: 20%">
-@Inject
-</td>
-<td style="width: 80%">
-<label style="color: blue;">persistance</label></br>
-</td>
-</tr>
- 
-</table>
-<a  href="#top">Top</a>
- 
- <a name="ClientLogicService"></a>
-<h1>Clase: ClientLogicService</h1>
-<table  border="1" style="width: 100%">
-<tr >
-<td colspan="2" bgcolor="#9FD2F0">
-<h1>Anotaciones</h1>
-</td>
-</tr>
- 
-<tr>
-<td style="width: 20%">
-@LocalBean
-</td>
-<td style="width: 80%">
-<label style="color: blue;">ClientLogicService</label></br>
-</td>
-</tr>
- 
-<tr>
-<td style="width: 20%">
-@Default
-</td>
-<td style="width: 80%">
-<label style="color: blue;">ClientLogicService</label></br>
-</td>
-</tr>
- 
-<tr>
-<td style="width: 20%">
-@Stateless
-</td>
-<td style="width: 80%">
-<label style="color: blue;">ClientLogicService</label></br>
-</td>
-</tr>
- 
-</table>
-<a  href="#top">Top</a>
- 
- <a name="ClientLogicServiceTest"></a>
-<h1>Clase: ClientLogicServiceTest</h1>
-<table  border="1" style="width: 100%">
-<tr >
-<td colspan="2" bgcolor="#9FD2F0">
-<h1>Anotaciones</h1>
-</td>
-</tr>
- 
-<tr>
-<td style="width: 20%">
-@RunWith
-</td>
-<td style="width: 80%">
-<label style="color: blue;">ClientLogicServiceTest</label></br>
-</td>
-</tr>
- 
- <tr>
-<td style="width: 20%">
-@Inject
-</td>
-<td style="width: 80%">
-<label style="color: blue;">clientLogicService</label></br>
-</td>
-</tr>
- 
- <tr>
-<td style="width: 20%">
-@Inject
-</td>
-<td style="width: 80%">
-<label style="color: blue;">clientPersistence</label></br>
-</td>
-</tr>
- 
- <tr>
-<td style="width: 20%">
-@Deployment
-</td>
-<td style="width: 80%">
-<label style="color: blue;">createDeployment</label></br>
-</td>
-</tr>
- 
- <tr>
-<td style="width: 20%">
-@Before
-</td>
-<td style="width: 80%">
-<label style="color: blue;">configTest</label></br>
-</td>
-</tr>
- 
- <tr>
-<td style="width: 20%">
-@Test
-</td>
-<td style="width: 80%">
-<label style="color: blue;">createClientTest</label></br>
-</td>
-</tr>
- 
- <tr>
-<td style="width: 20%">
-@Test
-</td>
-<td style="width: 80%">
-<label style="color: blue;">getClientsTest</label></br>
-</td>
-</tr>
- 
- <tr>
-<td style="width: 20%">
-@Test
-</td>
-<td style="width: 80%">
-<label style="color: blue;">getClientTest</label></br>
-</td>
-</tr>
- 
- <tr>
-<td style="width: 20%">
-@Test
-</td>
-<td style="width: 80%">
-<label style="color: blue;">deleteClientTest</label></br>
-</td>
-</tr>
- 
- <tr>
-<td style="width: 20%">
-@Test
-</td>
-<td style="width: 80%">
-<label style="color: blue;">updateClientTest</label></br>
-</td>
-</tr>
- 
- <tr>
-<td style="width: 20%">
-@Test
-</td>
-<td style="width: 80%">
-<label style="color: blue;">getClientPaginationTest</label></br>
-</td>
-</tr>
- 
-</table>
-<a  href="#top">Top</a>
+<div class="div">
+
+	<a  name="top"></a>
+	
+	<h1 align="center">
+		Market Place Javadoc
+	</h1>
+	
+		 <a class="custom" href="#_CarritoMasterDTO">_CarritoMasterDTO</a> 
+		 <a class="custom" href="#_CarritoMasterLogicService">_CarritoMasterLogicService</a> 
+		 <a class="custom" href="#CarritoMasterLogicService">CarritoMasterLogicService</a> 
+					 <br/>
+		 <a class="custom" href="#CarritoitemEntity">CarritoitemEntity</a> 
+		 <a class="custom" href="#CarritoitemEntityId">CarritoitemEntityId</a> 
+					 <br/>
+		 <a class="custom" href="#CarritoMasterService">CarritoMasterService</a> 
+		 <a class="custom" href="#_CarritoMasterService">_CarritoMasterService</a> 
+		 <a class="custom" href="#_CarritoMasterMockLogicService">_CarritoMasterMockLogicService</a> 
+					 <br/>
+		 <a class="custom" href="#_CarritoLogicService">_CarritoLogicService</a> 
+		 <a class="custom" href="#_CarritoPageDTO">_CarritoPageDTO</a> 
+		 <a class="custom" href="#CarritoMasterMockLogicService">CarritoMasterMockLogicService</a> 
+					 <br/>
+		 <a class="custom" href="#_CarritoDTO">_CarritoDTO</a> 
+		 <a class="custom" href="#CarritoLogicService">CarritoLogicService</a> 
+		 <a class="custom" href="#CarritoMockLogicService">CarritoMockLogicService</a> 
+		 <a class="custom" href="#CarritoLogicServiceTest">CarritoLogicServiceTest</a> 
+		 <a class="custom" href="#CarritoEntity">CarritoEntity</a> 
+		 <a class="custom" href="#_CarritoEntity">_CarritoEntity</a> 
+		 <a class="custom" href="#_CarritoService">_CarritoService</a> 
+		 <a class="custom" href="#CarritoService">CarritoService</a> 
+		 <a class="custom" href="#_ClientDTO">_ClientDTO</a> 
+		 <a class="custom" href="#ClientLogicServiceTest">ClientLogicServiceTest</a> 
+		 <a class="custom" href="#_ClientLogicService">_ClientLogicService</a> 
+		 <a class="custom" href="#ClientLogicService">ClientLogicService</a> 
+		 <a class="custom" href="#ClientMockLogicService">ClientMockLogicService</a> 
+		 <a class="custom" href="#_ClientPageDTO">_ClientPageDTO</a> 
+		 <a class="custom" href="#ClientPersistence">ClientPersistence</a> 
+		 <a class="custom" href="#ClientPersistenceTest">ClientPersistenceTest</a> 
+		 <a class="custom" href="#_ClientEntity">_ClientEntity</a> 
+		 <a class="custom" href="#ClientEntity">ClientEntity</a> 
+		 <a class="custom" href="#_ClientService">_ClientService</a> 
+		 <a class="custom" href="#ClientService">ClientService</a> 
+		 <a class="custom" href="#_ItemPersistence">_ItemPersistence</a> 
+		 <a class="custom" href="#_ItemEntity">_ItemEntity</a> 
+		 <a class="custom" href="#ItemEntity">ItemEntity</a> 
+		 <a class="custom" href="#_ItemService">_ItemService</a> 
+		 <a class="custom" href="#_ItemDTO">_ItemDTO</a> 
+		 <a class="custom" href="#_ItemLogicService">_ItemLogicService</a> 
+		 <a class="custom" href="#ItemMockLogicService">ItemMockLogicService</a> 
+		 <a class="custom" href="#ItemLogicServiceTest">ItemLogicServiceTest</a> 
+		 <a class="custom" href="#ItemLogicService">ItemLogicService</a> 
+		 <a class="custom" href="#_ItemPageDTO">_ItemPageDTO</a> 
+		 <a class="custom" href="#ItemService">ItemService</a> 
+		 <a class="custom" href="#ProductoLogicService">ProductoLogicService</a> 
+		 <a class="custom" href="#_ProductoPageDTO">_ProductoPageDTO</a> 
+		 <a class="custom" href="#ProductoLogicServiceTest">ProductoLogicServiceTest</a> 
+		 <a class="custom" href="#_ProductoDTO">_ProductoDTO</a> 
+		 <a class="custom" href="#_ProductoLogicService">_ProductoLogicService</a> 
+		 <a class="custom" href="#ProductoMockLogicService">ProductoMockLogicService</a> 
+		 <a class="custom" href="#ProductoService">ProductoService</a> 
+		 <a class="custom" href="#ProductoPersistenceTest">ProductoPersistenceTest</a> 
+		 <a class="custom" href="#_ProductoEntity">_ProductoEntity</a> 
+		 <a class="custom" href="#ProductoEntity">ProductoEntity</a> 
+		 <a class="custom" href="#_ProductoService">_ProductoService</a> 
+		 <a class="custom" href="#WebApp">WebApp</a> 
+		 <a class="custom" href="#CarritoMasterPersistence">CarritoMasterPersistence</a> 
+		 <a class="custom" href="#ItemPersistenceTest">ItemPersistenceTest</a> 
+		 <a class="custom" href="#ItemPersistence">ItemPersistence</a> 
+		 <a class="custom" href="#_CarritoMasterPersistence">_CarritoMasterPersistence</a> 
+		 <a class="custom" href="#CarritoPersistenceTest">CarritoPersistenceTest</a> 
+		 <a class="custom" href="#ProductoPersistence">ProductoPersistence</a> 
+		 <a class="custom" href="#_CarritoPersistence">_CarritoPersistence</a> 
+		 <a class="custom" href="#_ProductoPersistence">_ProductoPersistence</a> 
+		 <a class="custom" href="#CarritoPersistence">CarritoPersistence</a> 
+		 <a class="custom" href="#_ClientPersistence">_ClientPersistence</a> 
+	<br>
+	<br>
+	
+	
+		 <a name="_CarritoMasterDTO"></a>
+		<h1>
+			Clase: _CarritoMasterDTO
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@XmlRootElement
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									_CarritoMasterDTO
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="_CarritoMasterLogicService"></a>
+		<h1>
+			Clase: _CarritoMasterLogicService
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Inject
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										carritoPersistance
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Inject
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										carritoMasterPersistance
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Inject
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										itemPersistance
+									</label>
+									</br>
+								</td>
+							</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="CarritoMasterLogicService"></a>
+		<h1>
+			Clase: CarritoMasterLogicService
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Default
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									CarritoMasterLogicService
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@LocalBean
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									CarritoMasterLogicService
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Stateless
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									CarritoMasterLogicService
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="CarritoitemEntity"></a>
+		<h1>
+			Clase: CarritoitemEntity
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Column
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										carritoId
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Id
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										carritoId
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Column
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										itemId
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Id
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										itemId
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@JoinFetch
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										carritoIdEntity
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@PrimaryKeyJoinColumn
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										carritoIdEntity
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@ManyToOne
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										carritoIdEntity
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@ManyToOne
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										itemIdEntity
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@JoinFetch
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										itemIdEntity
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@PrimaryKeyJoinColumn
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										itemIdEntity
+									</label>
+									</br>
+								</td>
+							</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@IdClass
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									CarritoitemEntity
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@NamedQueries
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									CarritoitemEntity
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Entity
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									CarritoitemEntity
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="CarritoitemEntityId"></a>
+		<h1>
+			Clase: CarritoitemEntityId
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Override
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										hashCode
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Override
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										equals
+									</label>
+									</br>
+								</td>
+							</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="CarritoMasterService"></a>
+		<h1>
+			Clase: CarritoMasterService
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Consumes
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									CarritoMasterService
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Path
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									CarritoMasterService
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Stateless
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									CarritoMasterService
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Produces
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									CarritoMasterService
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="_CarritoMasterService"></a>
+		<h1>
+			Clase: _CarritoMasterService
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Inject
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										carritoLogicService
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@POST
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										createCarrito
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Path
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										deleteCarrito
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@DELETE
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										deleteCarrito
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Path
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getCarrito
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@GET
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getCarrito
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@PUT
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										updateCarrito
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Path
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										updateCarrito
+									</label>
+									</br>
+								</td>
+							</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="_CarritoMasterMockLogicService"></a>
+		<h1>
+			Clase: _CarritoMasterMockLogicService
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Inject
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										itemPersistance
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Inject
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										carritoPersistance
+									</label>
+									</br>
+								</td>
+							</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="_CarritoLogicService"></a>
+		<h1>
+			Clase: _CarritoLogicService
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Inject
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										persistance
+									</label>
+									</br>
+								</td>
+							</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="_CarritoPageDTO"></a>
+		<h1>
+			Clase: _CarritoPageDTO
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@XmlRootElement
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									_CarritoPageDTO
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="CarritoMasterMockLogicService"></a>
+		<h1>
+			Clase: CarritoMasterMockLogicService
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Singleton
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									CarritoMasterMockLogicService
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="_CarritoDTO"></a>
+		<h1>
+			Clase: _CarritoDTO
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@XmlRootElement
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									_CarritoDTO
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="CarritoLogicService"></a>
+		<h1>
+			Clase: CarritoLogicService
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Default
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									CarritoLogicService
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Stateless
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									CarritoLogicService
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@LocalBean
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									CarritoLogicService
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="CarritoMockLogicService"></a>
+		<h1>
+			Clase: CarritoMockLogicService
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Singleton
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									CarritoMockLogicService
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="CarritoLogicServiceTest"></a>
+		<h1>
+			Clase: CarritoLogicServiceTest
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Inject
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										carritoLogicService
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Inject
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										carritoPersistence
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Deployment
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										createDeployment
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Before
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										configTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										createCarritoTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getCarritosTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getCarritoTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										deleteCarritoTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										updateCarritoTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getCarritoPaginationTest
+									</label>
+									</br>
+								</td>
+							</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@RunWith
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									CarritoLogicServiceTest
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="CarritoEntity"></a>
+		<h1>
+			Clase: CarritoEntity
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Entity
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									CarritoEntity
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="_CarritoEntity"></a>
+		<h1>
+			Clase: _CarritoEntity
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Id
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										id
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@GeneratedValue
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										id
+									</label>
+									</br>
+								</td>
+							</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@MappedSuperclass
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									_CarritoEntity
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="_CarritoService"></a>
+		<h1>
+			Clase: _CarritoService
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Inject
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										carritoLogicService
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@POST
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										createCarrito
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Path
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										deleteCarrito
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@DELETE
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										deleteCarrito
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@GET
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getCarritos
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Path
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getCarrito
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@GET
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getCarrito
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@PUT
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										updateCarrito
+									</label>
+									</br>
+								</td>
+							</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="CarritoService"></a>
+		<h1>
+			Clase: CarritoService
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Path
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									CarritoService
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Produces
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									CarritoService
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Consumes
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									CarritoService
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Stateless
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									CarritoService
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="_ClientDTO"></a>
+		<h1>
+			Clase: _ClientDTO
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@XmlRootElement
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									_ClientDTO
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="ClientLogicServiceTest"></a>
+		<h1>
+			Clase: ClientLogicServiceTest
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Inject
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										clientLogicService
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Inject
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										clientPersistence
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Deployment
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										createDeployment
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Before
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										configTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										createClientTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getClientsTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getClientTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										deleteClientTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										updateClientTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getClientPaginationTest
+									</label>
+									</br>
+								</td>
+							</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@RunWith
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ClientLogicServiceTest
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="_ClientLogicService"></a>
+		<h1>
+			Clase: _ClientLogicService
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Inject
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										persistance
+									</label>
+									</br>
+								</td>
+							</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="ClientLogicService"></a>
+		<h1>
+			Clase: ClientLogicService
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Default
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ClientLogicService
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Stateless
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ClientLogicService
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@LocalBean
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ClientLogicService
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="ClientMockLogicService"></a>
+		<h1>
+			Clase: ClientMockLogicService
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Singleton
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ClientMockLogicService
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="_ClientPageDTO"></a>
+		<h1>
+			Clase: _ClientPageDTO
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@XmlRootElement
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									_ClientPageDTO
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="ClientPersistence"></a>
+		<h1>
+			Clase: ClientPersistence
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@LocalBean
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ClientPersistence
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Default
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ClientPersistence
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Stateless
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ClientPersistence
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="ClientPersistenceTest"></a>
+		<h1>
+			Clase: ClientPersistenceTest
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Inject
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										clientPersistence
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@PersistenceContext
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										em
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Inject
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										utx
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Deployment
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										createDeployment
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Before
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										configTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										createClientTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getClientsTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getClientTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										deleteClientTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										updateClientTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getClientPaginationTest
+									</label>
+									</br>
+								</td>
+							</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@RunWith
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ClientPersistenceTest
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="_ClientEntity"></a>
+		<h1>
+			Clase: _ClientEntity
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Id
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										id
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@GeneratedValue
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										id
+									</label>
+									</br>
+								</td>
+							</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@MappedSuperclass
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									_ClientEntity
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="ClientEntity"></a>
+		<h1>
+			Clase: ClientEntity
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Entity
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ClientEntity
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="_ClientService"></a>
+		<h1>
+			Clase: _ClientService
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Inject
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										clientLogicService
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@POST
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										createClient
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@DELETE
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										deleteClient
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Path
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										deleteClient
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@GET
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getClients
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Path
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getClient
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@GET
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getClient
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@PUT
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										updateClient
+									</label>
+									</br>
+								</td>
+							</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="ClientService"></a>
+		<h1>
+			Clase: ClientService
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Consumes
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ClientService
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Produces
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ClientService
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Path
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ClientService
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Stateless
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ClientService
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="_ItemPersistence"></a>
+		<h1>
+			Clase: _ItemPersistence
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@PersistenceContext
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										entityManager
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@SuppressWarnings
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getItems
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@SuppressWarnings
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getItems
+									</label>
+									</br>
+								</td>
+							</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="_ItemEntity"></a>
+		<h1>
+			Clase: _ItemEntity
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@GeneratedValue
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										id
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Id
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										id
+									</label>
+									</br>
+								</td>
+							</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@MappedSuperclass
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									_ItemEntity
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="ItemEntity"></a>
+		<h1>
+			Clase: ItemEntity
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Entity
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ItemEntity
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="_ItemService"></a>
+		<h1>
+			Clase: _ItemService
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Inject
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										itemLogicService
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@POST
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										createItem
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@DELETE
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										deleteItem
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Path
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										deleteItem
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@GET
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getItems
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Path
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getItem
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@GET
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getItem
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@PUT
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										updateItem
+									</label>
+									</br>
+								</td>
+							</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="_ItemDTO"></a>
+		<h1>
+			Clase: _ItemDTO
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@XmlRootElement
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									_ItemDTO
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="_ItemLogicService"></a>
+		<h1>
+			Clase: _ItemLogicService
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Inject
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										persistance
+									</label>
+									</br>
+								</td>
+							</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="ItemMockLogicService"></a>
+		<h1>
+			Clase: ItemMockLogicService
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Singleton
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ItemMockLogicService
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="ItemLogicServiceTest"></a>
+		<h1>
+			Clase: ItemLogicServiceTest
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Inject
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										itemLogicService
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Inject
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										itemPersistence
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Deployment
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										createDeployment
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Before
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										configTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										createItemTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getItemsTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getItemTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										deleteItemTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										updateItemTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getItemPaginationTest
+									</label>
+									</br>
+								</td>
+							</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@RunWith
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ItemLogicServiceTest
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="ItemLogicService"></a>
+		<h1>
+			Clase: ItemLogicService
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Default
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ItemLogicService
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@LocalBean
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ItemLogicService
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Stateless
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ItemLogicService
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="_ItemPageDTO"></a>
+		<h1>
+			Clase: _ItemPageDTO
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@XmlRootElement
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									_ItemPageDTO
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="ItemService"></a>
+		<h1>
+			Clase: ItemService
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Path
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ItemService
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Consumes
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ItemService
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Stateless
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ItemService
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Produces
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ItemService
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="ProductoLogicService"></a>
+		<h1>
+			Clase: ProductoLogicService
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@LocalBean
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ProductoLogicService
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Stateless
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ProductoLogicService
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Default
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ProductoLogicService
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="_ProductoPageDTO"></a>
+		<h1>
+			Clase: _ProductoPageDTO
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@XmlRootElement
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									_ProductoPageDTO
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="ProductoLogicServiceTest"></a>
+		<h1>
+			Clase: ProductoLogicServiceTest
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Inject
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										productoLogicService
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Inject
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										productoPersistence
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Deployment
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										createDeployment
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Before
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										configTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										createProductoTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getProductosTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getProductoTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										deleteProductoTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										updateProductoTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getProductoPaginationTest
+									</label>
+									</br>
+								</td>
+							</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@RunWith
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ProductoLogicServiceTest
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="_ProductoDTO"></a>
+		<h1>
+			Clase: _ProductoDTO
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@XmlRootElement
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									_ProductoDTO
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="_ProductoLogicService"></a>
+		<h1>
+			Clase: _ProductoLogicService
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Inject
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										persistance
+									</label>
+									</br>
+								</td>
+							</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="ProductoMockLogicService"></a>
+		<h1>
+			Clase: ProductoMockLogicService
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Singleton
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ProductoMockLogicService
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="ProductoService"></a>
+		<h1>
+			Clase: ProductoService
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Path
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ProductoService
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Stateless
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ProductoService
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Consumes
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ProductoService
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Produces
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ProductoService
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="ProductoPersistenceTest"></a>
+		<h1>
+			Clase: ProductoPersistenceTest
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Inject
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										productoPersistence
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@PersistenceContext
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										em
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Inject
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										utx
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Deployment
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										createDeployment
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Before
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										configTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										createProductoTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getProductosTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getProductoTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										deleteProductoTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										updateProductoTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getProductoPaginationTest
+									</label>
+									</br>
+								</td>
+							</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@RunWith
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ProductoPersistenceTest
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="_ProductoEntity"></a>
+		<h1>
+			Clase: _ProductoEntity
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@GeneratedValue
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										id
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Id
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										id
+									</label>
+									</br>
+								</td>
+							</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@MappedSuperclass
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									_ProductoEntity
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="ProductoEntity"></a>
+		<h1>
+			Clase: ProductoEntity
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Entity
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ProductoEntity
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="_ProductoService"></a>
+		<h1>
+			Clase: _ProductoService
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Inject
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										productoLogicService
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@POST
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										createProducto
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Path
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										deleteProducto
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@DELETE
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										deleteProducto
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@GET
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getProductos
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Path
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getProducto
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@GET
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getProducto
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@PUT
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										updateProducto
+									</label>
+									</br>
+								</td>
+							</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="WebApp"></a>
+		<h1>
+			Clase: WebApp
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Override
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getClasses
+									</label>
+									</br>
+								</td>
+							</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@ApplicationPath
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									WebApp
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="CarritoMasterPersistence"></a>
+		<h1>
+			Clase: CarritoMasterPersistence
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Default
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									CarritoMasterPersistence
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@LocalBean
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									CarritoMasterPersistence
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Stateless
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									CarritoMasterPersistence
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="ItemPersistenceTest"></a>
+		<h1>
+			Clase: ItemPersistenceTest
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Inject
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										itemPersistence
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@PersistenceContext
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										em
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Inject
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										utx
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Deployment
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										createDeployment
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Before
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										configTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										createItemTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getItemsTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getItemTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										deleteItemTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										updateItemTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getItemPaginationTest
+									</label>
+									</br>
+								</td>
+							</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@RunWith
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ItemPersistenceTest
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="ItemPersistence"></a>
+		<h1>
+			Clase: ItemPersistence
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@LocalBean
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ItemPersistence
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Stateless
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ItemPersistence
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Default
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ItemPersistence
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="_CarritoMasterPersistence"></a>
+		<h1>
+			Clase: _CarritoMasterPersistence
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@PersistenceContext
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										entityManager
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Inject
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										carritoPersistence
+									</label>
+									</br>
+								</td>
+							</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="CarritoPersistenceTest"></a>
+		<h1>
+			Clase: CarritoPersistenceTest
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Inject
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										carritoPersistence
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@PersistenceContext
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										em
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Inject
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										utx
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Deployment
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										createDeployment
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Before
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										configTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										createCarritoTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getCarritosTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getCarritoTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										deleteCarritoTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										updateCarritoTest
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@Test
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getCarritoPaginationTest
+									</label>
+									</br>
+								</td>
+							</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@RunWith
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									CarritoPersistenceTest
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="ProductoPersistence"></a>
+		<h1>
+			Clase: ProductoPersistence
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Default
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ProductoPersistence
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Stateless
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ProductoPersistence
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@LocalBean
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									ProductoPersistence
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="_CarritoPersistence"></a>
+		<h1>
+			Clase: _CarritoPersistence
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@PersistenceContext
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										entityManager
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@SuppressWarnings
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getCarritos
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@SuppressWarnings
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getCarritos
+									</label>
+									</br>
+								</td>
+							</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="_ProductoPersistence"></a>
+		<h1>
+			Clase: _ProductoPersistence
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@PersistenceContext
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										entityManager
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@SuppressWarnings
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getProductos
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@SuppressWarnings
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getProductos
+									</label>
+									</br>
+								</td>
+							</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="CarritoPersistence"></a>
+		<h1>
+			Clase: CarritoPersistence
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Stateless
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									CarritoPersistence
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@LocalBean
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									CarritoPersistence
+								</label>
+								</br>
+							</td>
+						</tr>
+					 	<tr>
+						 	<td style="width: 20%">
+								@Default
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									CarritoPersistence
+								</label>
+								</br>
+							</td>
+						</tr>
+		</table>
+		<br/>
+		<br/>
+		 <a name="_ClientPersistence"></a>
+		<h1>
+			Clase: _ClientPersistence
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@PersistenceContext
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										entityManager
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@SuppressWarnings
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getClients
+									</label>
+									</br>
+								</td>
+							</tr>
+						 	<tr>
+							 	<td style="width: 20%">
+									@SuppressWarnings
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										getClients
+									</label>
+									</br>
+								</td>
+							</tr>
+		</table>
+		<br/>
+		<br/>
+	
+	
+	
+	
+	<br/>
+	<br/>
+	
+	<a class="custom"  href="#top">
+		Top
+	</a>
+	
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+
 </div>
+
 </body>
 </html>

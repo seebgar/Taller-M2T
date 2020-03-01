@@ -1,6 +1,12 @@
+
 [%	
 var root : mp!CodeModel:= mp!CodeModel.all.at(0);
 %]
+
+[*
+Sebastian Garcia
+201630047
+*]
 
 
 <!DOCTYPE html>
@@ -11,61 +17,154 @@ var root : mp!CodeModel:= mp!CodeModel.all.at(0);
 <style type="text/css">
 
 .div{
-left:0%;
-top:0%;  
-position: absolute;
-height: 99%; 
-width: 99.7%
+	min-height: 100vh; 
+	max-width: 70%;
+	padding: 0 10em;
+}
+
+a.custom {
+	background-color: #019875;
+	color: white;
+	padding: 14px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 8px;
 }
 </style>
 </head>
 <body>
+
 <div class="div">
-<a  name="top"></a>
-<h1 align="center">Market Place Javadoc</h1>
-[%
 
- for(clases in mp!ClassUnit.all)
- {
- var tieneAnotaciones=false; 
- for(elementos in clases.codeElement)
- {
- if (elementos.codeRelation.select(a|a.isTypeOf(mp!HasValue)).select(a|a.annotation.size()>0).size()>0){
- tieneAnotaciones=true;
- break;
- }
- }
- if(clases.codeRelation.select(a|a.isTypeOf(mp!HasValue)).select(a|a.annotation.size()>0).size()>0 or tieneAnotaciones==true){
- %]
- <a  href="#[%=clases.name%]">[%=clases.name%]</a>-
- [%
- }
- }
-%]
-<br>
-<br>
-
-<a name="_ClientLogicService"></a>
-<h1>Clase: _ClientLogicService</h1>
-<table  border="1" style="width: 100%">
-<tr >
-<td colspan="2" bgcolor="#9FD2F0">
-<h1>Anotaciones</h1>
-</td>
-</tr>
- 
- <tr>
-<td style="width: 20%">
-@Inject
-</td>
-<td style="width: 80%">
-<label style="color: blue;">persistance</label></br>
-</td>
-</tr>
- 
-</table>
-<a  href="#top">Top</a>
+	<a  name="top"></a>
+	
+	<h1 align="center">
+		Market Place Javadoc
+	</h1>
+	
+	[%
+	var count = 0;
+	 for(clases in mp!ClassUnit.all)
+	 {
+	 	count += 1;
+		 var tieneAnotaciones=false; 
+		 for(elementos in clases.codeElement)
+		 {
+			 if ( elementos.codeRelation.select( a | a.isTypeOf( mp!HasValue ) ).select( a | a.annotation.size() > 0 ).size() > 0 )
+			 {
+				 tieneAnotaciones=true;
+				 break;
+			 }
+		 }
+		 if( clases.codeRelation.select( a | a.isTypeOf( mp!HasValue ) ).select( a | a.annotation.size() > 0 ).size() > 0 or tieneAnotaciones == true )
+		 {
+	%]
+		 <a class="custom" href="#[%=clases.name%]">[%=clases.name%]</a> 
+	[%
+			if ( count == 3 ) 
+			{ 
+				count = 0;
+				%]
+					 <br/>
+				[%	
+		 	}
+	 	}
+	 }
+	%]
+	<br>
+	<br>
+	
+	
+	[%
+	 for(clases in mp!ClassUnit.all)
+	 {
+		 var tieneAnotaciones=false; 
+		 for(elementos in clases.codeElement)
+		 {
+			 if ( elementos.codeRelation.select( a | a.isTypeOf( mp!HasValue ) ).select( a | a.annotation.size() > 0 ).size() > 0 )
+			 {
+				 tieneAnotaciones=true;
+				 break;
+			 }
+		 }
+		 if( clases.codeRelation.select( a | a.isTypeOf( mp!HasValue ) ).select( a | a.annotation.size() > 0 ).size() > 0 or tieneAnotaciones == true )
+		 {
+	%]
+		 <a name="[%=clases.name %]"></a>
+		<h1>
+			Clase: [%=clases.name %]
+		</h1>
+		
+		<table  border="1" style="width: 100%">
+			<tr >
+				<td colspan="2" bgcolor="#C9C9C9">
+					<h1>
+						Anotaciones
+					</h1>
+				</td>
+			</tr>
+				[%
+				for(elementos in clases.codeElement)
+				 {
+				 	for ( x in  elementos.codeRelation.select( a | a.isTypeOf( mp!HasValue ) ).select( a | a.annotation.size() > 0 ) ) 
+				 	{
+				 		 %]
+						 	<tr>
+							 	<td style="width: 20%">
+									@[%=x.to.name %]
+								</td>
+								<td style="width: 80%">
+									<label style="color: #019875;">
+										[%=x.from.name %]
+									</label>
+									</br>
+								</td>
+							</tr>
+						 [%
+				 	}
+				 }
+				 for(coderel in clases.codeRelation.select( a | a.isTypeOf( mp!HasValue ) ).select( a | a.annotation.size() > 0 ))
+				 {
+			 		 %]
+					 	<tr>
+						 	<td style="width: 20%">
+								@[%=coderel.to.name %]
+							</td>
+							<td style="width: 80%">
+								<label style="color: #019875;">
+									[%=coderel.from.name %]
+								</label>
+								</br>
+							</td>
+						</tr>
+					 [%
+				 }
+				%]
+		</table>
+		<br/>
+		<br/>
+	[%
+	 	}
+	 }
+	%]
+	
+	
+	
+	
+	<br/>
+	<br/>
+	
+	<a class="custom"  href="#top">
+		Top
+	</a>
+	
+	<br/>
+	<br/>
+	<br/>
+	<br/>
 
 </div>
+
 </body>
 </html>
